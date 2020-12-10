@@ -4,7 +4,7 @@
  * @Author: wqq
  * @Date: 2020-12-08 15:46:49
  * @LastEditors: wqq
- * @LastEditTime: 2020-12-08 16:22:06
+ * @LastEditTime: 2020-12-10 10:10:20
  */
 let gulp = require('gulp');
 
@@ -17,9 +17,9 @@ let cssmin = require('gulp-cssmin');
 let salad = require('postcss-salad')(require('./salad.config.json'));
 
 function compile(cb) {
-  return gulp.src('./src/*.css')
+  return gulp.src('./src/**/*.css')
     .pipe(postcss([salad]))
-    .pipe(cssmin())
+    // .pipe(cssmin())
     .pipe(gulp.dest('./lib'));
 }
 
@@ -30,7 +30,7 @@ function copyfont(cb) {
 }
 
 function watchTest() {
-  watch('./src/*.css', function () {
+  watch('./src/**/*.css', function () {
     compile()
   });
 }

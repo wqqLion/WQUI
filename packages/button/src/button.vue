@@ -4,18 +4,18 @@
  * @Author: wqq
  * @Date: 2020-12-08 16:25:11
  * @LastEditors: wqq
- * @LastEditTime: 2020-12-08 17:09:09
+ * @LastEditTime: 2020-12-10 11:18:50
 -->
 <template>
-  <button>
-    <i v-if="icon !== ''" :class="icon"></i>
-    <slot></slot>
-  </button>
+<button :class="['w__button--'+type,{'is-plain':plain,'id-disabled':disabled,'is-round':round},'w__button--size-'+size]" class="w__button" :disabled="disabled">
+  <i v-if="icon !== ''" :class="icon" class="icon iconfont"></i>
+  <slot></slot>
+</button>
 </template>
 
-<script type="text/javascript">
+<script>
 export default {
-  name: "WQButton",
+  name: "WqButton",
   props: {
     type: {
       type: String,
@@ -43,5 +43,3 @@ export default {
   mounted() {},
 };
 </script>
-
-

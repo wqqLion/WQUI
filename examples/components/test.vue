@@ -4,7 +4,7 @@
  * @Author: wqq
  * @Date: 2020-12-08 16:57:04
  * @LastEditors: wqq
- * @LastEditTime: 2020-12-08 17:08:00
+ * @LastEditTime: 2020-12-08 18:05:03
 -->
 <template>
   <div class="">
@@ -13,13 +13,17 @@
 </template>
 
 <script type="text/javascript">
+import { WButton } from "../../packages/index";
+// console.log(WQButton);
 export default {
   data() {
     return {};
   },
   components: {},
   methods: {},
-  mounted() {},
+  mounted() {
+    console.log(WQButton)
+  },
 };
 </script>
 

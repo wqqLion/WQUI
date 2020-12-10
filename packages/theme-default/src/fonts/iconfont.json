@@ -1,0 +1,30 @@
+{
+  "id": "2261236",
+  "name": "框架图标",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "ui框架图标",
+  "glyphs": [
+    {
+      "icon_id": "58330",
+      "name": "delete",
+      "font_class": "delete",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "1645862",
+      "name": "delete",
+      "font_class": "delete1",
+      "unicode": "e6cf",
+      "unicode_decimal": 59087
+    },
+    {
+      "icon_id": "5994061",
+      "name": "edit",
+      "font_class": "edit",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    }
+  ]
+}

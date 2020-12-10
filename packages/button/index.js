@@ -4,12 +4,12 @@
  * @Author: wqq
  * @Date: 2020-12-08 16:24:50
  * @LastEditors: wqq
- * @LastEditTime: 2020-12-08 17:07:20
+ * @LastEditTime: 2020-12-10 10:20:08
  */
-import WQButton from './src/button';
+import WqButton from './src/button';
 
-WQButton.install = function(Vue){
-  Vue.component(WQButton.name,WQButton);
+WqButton.install = function(Vue){
+  Vue.component(WqButton.name,WqButton);
 }
 
-export default WQButton;
+export default WqButton;
