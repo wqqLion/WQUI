@@ -4,7 +4,7 @@
  * @Author: wqq
  * @Date: 2020-12-07 16:30:58
  * @LastEditors: wqq
- * @LastEditTime: 2020-12-07 16:41:40
+ * @LastEditTime: 2020-12-10 15:33:22
 -->
 <template>
   <div id="app">
@@ -19,12 +19,8 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+*{
+  margin: 0;
+  padding: 0;
 }
 </style>

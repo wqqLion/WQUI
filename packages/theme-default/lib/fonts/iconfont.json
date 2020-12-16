@@ -6,6 +6,34 @@
   "description": "ui框架图标",
   "glyphs": [
     {
+      "icon_id": "1526019",
+      "name": "success",
+      "font_class": "success",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "5379903",
+      "name": "info",
+      "font_class": "info",
+      "unicode": "e705",
+      "unicode_decimal": 59141
+    },
+    {
+      "icon_id": "6652504",
+      "name": "error",
+      "font_class": "error",
+      "unicode": "e6c6",
+      "unicode_decimal": 59078
+    },
+    {
+      "icon_id": "11882885",
+      "name": "bg-warning",
+      "font_class": "bg-warning",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
       "icon_id": "58330",
       "name": "delete",
       "font_class": "delete",

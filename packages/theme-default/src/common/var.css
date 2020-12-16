@@ -37,6 +37,9 @@
   --color-light-gray: color(var(--color-base-black) h(+10) s(33%) l(92%));
   --color-extra-light-gray: color(var(--color-base-black) h(+6) s(33%) l(95%));
 
+  --color-background-base:rgba(0,0,0,.05);
+
+
   /* Link
   -------------------------- */
   --link-color: var(--color-extra-light-black);

@@ -4,13 +4,18 @@
  * @Author: wqq
  * @Date: 2020-12-08 16:25:11
  * @LastEditors: wqq
- * @LastEditTime: 2020-12-10 11:18:50
+ * @LastEditTime: 2020-12-16 11:20:48
 -->
 <template>
-<button :class="['w__button--'+type,{'is-plain':plain,'id-disabled':disabled,'is-round':round},'w__button--size-'+size]" class="w__button" :disabled="disabled">
-  <i v-if="icon !== ''" :class="icon" class="icon iconfont"></i>
-  <slot></slot>
-</button>
+  <button
+    :class="['w__button--'+type,{'is-plain':plain,'id-disabled':disabled,'is-round':round},'w__button--size-'+size]"
+    class="w__button"
+    :disabled="disabled"
+    @click="$emit('click')"
+  >
+    <i v-if="icon !== ''" :class="icon" class="icon iconfont"></i>
+    <slot></slot>
+  </button>
 </template>
 
 <script>
@@ -19,27 +24,27 @@ export default {
   props: {
     type: {
       type: String,
-      default: "default",
+      default: "default"
     },
     size: {
       type: String,
-      default: "default",
+      default: "default"
     },
     icon: {
       type: String,
-      default: "",
+      default: ""
     },
     plain: Boolean,
     disabled: Boolean,
-    round: Boolean,
+    round: Boolean
   },
   data() {
     return {
-      msg: "button",
+      msg: "button"
     };
   },
   components: {},
   methods: {},
-  mounted() {},
+  mounted() {}
 };
 </script>

@@ -4,7 +4,7 @@
  * @Author: wqq
  * @Date: 2020-12-07 16:30:58
  * @LastEditors: wqq
- * @LastEditTime: 2020-12-08 16:57:39
+ * @LastEditTime: 2020-12-10 11:42:33
  */
 import Vue from 'vue'
 import Router from 'vue-router'
@@ -17,6 +17,11 @@ export default new Router({
       path: '/test',
       name: 'test',
       component: r => require.ensure([], () => r(require('../components/test.vue')))
+    },
+    {
+      path: '/message',
+      name: 'message',
+      component: r => require.ensure([], () => r(require('../components/message.vue')))
     },
     {
       path: '/button',

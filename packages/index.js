@@ -4,12 +4,13 @@
  * @Author: wqq
  * @Date: 2020-12-08 16:24:24
  * @LastEditors: wqq
- * @LastEditTime: 2020-12-10 10:20:29
+ * @LastEditTime: 2020-12-10 12:00:20
  */
 
-import WqButton from './button/index.js';
+import Button from './button/index.js';
+import Message from './message/index.js';
 const components = [
-  WqButton
+  Button
 ]
 
 const install = function (Vue) {
@@ -17,6 +18,8 @@ const install = function (Vue) {
   components.forEach(component => {
     Vue.component(component.name, component);
   });
+
+  Vue.prototype.$WqMessage = Message;
 
   // if (install.installed) return;
   // components.map(component => Vue.component(component.name, component));
@@ -31,5 +34,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  WqButton
+  Button,
+  Message
 }
