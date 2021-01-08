@@ -4,7 +4,7 @@
  * @Author: wqq
  * @Date: 2020-12-10 11:42:00
  * @LastEditors: wqq
- * @LastEditTime: 2020-12-16 11:28:09
+ * @LastEditTime: 2020-12-16 11:37:43
 -->
 <template>
   <div>
@@ -12,6 +12,7 @@
     <wq-button type="success" @click="success" plain>成功提示</wq-button>
     <wq-button type="warning" @click="warning" plain>警告提示</wq-button>
     <wq-button type="danger" @click="error" plain>错误提示</wq-button>
+    <wq-button type="danger" @click="errorhtml" plain>错误提示html</wq-button>
     <!-- <button>111</button> -->
   </div>
 </template>
@@ -62,6 +63,17 @@ export default {
         type: "error",
         duration: 3000,
         message: "error",
+        showClose: true,
+        onClose: function() {
+          console.log("关闭回调");
+        }
+      });
+    },
+    errorhtml(){
+      this.$WqMessage({
+        type: "error",
+        duration: 0,
+        message: "<div>html片段</div>",
         showClose: true,
         onClose: function() {
           console.log("关闭回调");

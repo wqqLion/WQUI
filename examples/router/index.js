@@ -4,7 +4,7 @@
  * @Author: wqq
  * @Date: 2020-12-07 16:30:58
  * @LastEditors: wqq
- * @LastEditTime: 2020-12-10 11:42:33
+ * @LastEditTime: 2020-12-16 12:00:07
  */
 import Vue from 'vue'
 import Router from 'vue-router'
@@ -22,6 +22,11 @@ export default new Router({
       path: '/message',
       name: 'message',
       component: r => require.ensure([], () => r(require('../components/message.vue')))
+    },
+    {
+      path: '/input',
+      name: 'input',
+      component: r => require.ensure([], () => r(require('../components/input.vue')))
     },
     {
       path: '/button',
