@@ -4,7 +4,7 @@
  * @Author: wqq
  * @Date: 2020-12-10 11:32:43
  * @LastEditors: wqq
- * @LastEditTime: 2020-12-16 14:19:37
+ * @LastEditTime: 2021-01-08 11:18:57
 -->
 <template>
   <transition name="wq-message-fade">
@@ -12,7 +12,7 @@
       <div class="wq__message--content">
         <i @click="close" v-show="showClose" class="icon iconfont icon-delete wq__message--close"></i>
         <i class="icon iconfont icon-success wq__message--icon"></i>
-        <p class="wq__message--text">{{message}}</p>
+        <p class="wq__message--text" v-html="message"></p>
       </div>
     </div>
   </transition>

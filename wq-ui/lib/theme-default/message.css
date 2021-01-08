@@ -1,227 +1,59 @@
-:root {
-
-  /* Transition
-  -------------------------- */
-
-  /* Colors
-  -------------------------- */
-
-
-  /* Link
-  -------------------------- */
-
-  /* Border
-  -------------------------- */
-
-  /* Box-shadow
-  -------------------------- */
-
-  /* Fill
-  -------------------------- */
-
-  /* Font
-  -------------------------- */
-
-  /* Size
-  -------------------------- */
-
-  /* z-index
-  -------------------------- */
-
-  /* Disable base
-  -------------------------- */
-
-  /* Icon
-  -------------------------- */
-
-  /* Checkbox
-  -------------------------- */
-
-
-
-  /* Radio
-  -------------------------- */
-
-  /* LimitTeaxtarea
-  ------------------------------------------*/
-
-  /* Select
-  -------------------------- */
-
-  /* Alert
-  -------------------------- */
-
-  /* Message Box
-  -------------------------- */
-
-  /* Message
-  -------------------------- */
-
-  /* Notification
-  -------------------------- */
-
-  /* Input
-  -------------------------- */
-
-  /* Cascader
-  -------------------------- */
-
-  /* Group
-  -------------------------- */
-
-  /* Tab
-  -------------------------- */
-
-  /* Button
-  -------------------------- */
-
-
-  /* cascader
-  -------------------------- */
-
-  /* Switch
- -------------------------- */
-
-  /* Dialog
- -------------------------- */
-
-  /* Table
- -------------------------- */
-
-  /* Pagination
- -------------------------- */
-
-  /* Popover
- -------------------------- */
-
-  /* Tooltip
-  -------------------------- */
-
-  /* Tag
-  -------------------------- */
-
-  /* Dropdown
-  -------------------------- */
-
-  /* Badge
-  -------------------------- */
-
-  /* Card
-  --------------------------*/
-
-  /* Slider
-  --------------------------*/
-
-  /* Steps
-  --------------------------*/
-
-  /* Menu
-  --------------------------*/
-
-  /* Rate
-  --------------------------*/
-
-  /* DatePicker
-  --------------------------*/
-
-  /* Loading
-  --------------------------*/
-
-  /* Scrollbar
-  --------------------------*/
-
-  /* Carousel
-  --------------------------*/
-
-  /* Collapse
-  --------------------------*/
-
-  /* Transfer
-  --------------------------*/
-}
-
-
-.wq {}
-
-
 .wq__message {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    background-color: rgba(0,0,0,.05)
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.1);
 }
-
-
 .wq__message--content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      min-width: 400px;
-      min-height: 80px;
-      -ms-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
-      background-color:#fff;
-      font-size:18px;
-      display:table-cell;
-      vertical-align: middle
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 400px;
+  min-height: 80px;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #fff;
+  font-size: 18px;
+  display: table-cell;
+  vertical-align: middle;
 }
-
-
 .wq__message--icon {
-      font-size:40px;
-      position: absolute;
-      top: 50%;
-      left: 50px;
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%)
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
 }
-
-
 .wq__message--text {
-      position: absolute;
-      width: calc(100% - 130px);
-      left: 100px;
-      top: 50%;
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-      font-size:16px
+  position: absolute;
+  width: calc(100% - 130px);
+  left: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
 }
-
-
 .wq__message--close {
-      position: absolute;
-      right: 10px;
-      top:50%;
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-      font-size:20px;
-      cursor: pointer;
-      color:#b4bccc
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  cursor: pointer;
+  color: #909399;
 }
-
-
 .wq__message--close:hover {
-      color:#3FAAF5
+  color: #409eff;
 }
-
-
 .wq__message--success {
-      color: #13ce66
+  color: #13ce66;
 }
-
-
 .wq__message--info {
-      color:#50bfff
+  color: #409eff;
 }
-
-
 .wq__message--warning {
-      color:#f7ba2a
+  color: #e6a23c;
 }
-
-
 .wq__message--error {
-      color:#ff4949
+  color: #f56c6c;
 }
