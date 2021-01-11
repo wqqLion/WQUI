@@ -1,0 +1,89 @@
+.wq__input {
+  height: 30px;
+  position: relative;
+}
+.wq__input_clear {
+  font-size: 16px;
+  position: absolute;
+  color: #909399;
+  cursor: pointer;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.wq__input .wq__input-count {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+  color: #909399;
+}
+.wq__input--suffix-suffix {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #909399;
+}
+.wq__input--prefix-prefix {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #909399;
+}
+.wq__input--prefix input {
+  padding-left: 30px;
+}
+.wq__input--group {
+  width: 100%;
+  display: inline-table;
+  border-collapse: separate;
+  border-spacing: 0;
+  line-height: normal;
+}
+.wq__input--group__prepend,
+.wq__input--group__append {
+  padding: 0 20px;
+  font-size: 16px;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  width: 1px;
+  white-space: nowrap;
+  border: 1px solid #dcdfe6;
+  color: #909399;
+  background-color: #f5f7fa;
+}
+.wq__input--inputer {
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  border: 1px solid #dcdfe6;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.wq__input--inputer:focus {
+  border: 1px solid #409eff;
+  outline: none;
+}
+.wq__input--textarea {
+  display: inline-block;
+  position: relative;
+}
+.wq__input--textarea-inner {
+  border: 1px solid #dcdfe6;
+  width: 100%;
+  height: 100%;
+}
+.wq__input--textarea-inner:focus {
+  border: 1px solid #409eff;
+  outline: none;
+}
+.wq__input--textarea .wq__input-count {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}

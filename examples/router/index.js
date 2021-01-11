@@ -4,7 +4,7 @@
  * @Author: wqq
  * @Date: 2020-12-07 16:30:58
  * @LastEditors: wqq
- * @LastEditTime: 2020-12-16 12:00:07
+ * @LastEditTime: 2021-01-08 14:18:54
  */
 import Vue from 'vue'
 import Router from 'vue-router'
@@ -14,9 +14,9 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/test',
-      name: 'test',
-      component: r => require.ensure([], () => r(require('../components/test.vue')))
+      path: '/',
+      name: '/',
+      component: r => require.ensure([], () => r(require('../components/index.vue')))
     },
     {
       path: '/message',

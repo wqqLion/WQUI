@@ -1,0 +1,102 @@
+@import './common/var';
+
+.wq__input {
+  height: 30px;
+  position: relative;
+
+  &_clear {
+    font-size: 16px;
+    position: absolute;
+    color: @color-info;
+    cursor: pointer;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .wq__input-count {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    color: @color-info;
+  }
+
+  &--suffix {
+    &-suffix {
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: @color-info;
+    }
+  }
+
+  &--prefix {
+    &-prefix {
+      position: absolute;
+      left: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: @color-info;
+    }
+
+    & input {
+      padding-left: 30px;
+    }
+  }
+
+  &--group {
+    width: 100%;
+    display: inline-table;
+    border-collapse: separate;
+    border-spacing: 0;
+    line-height: normal;
+
+    &__prepend,
+    &__append {
+      padding: 0 20px;
+      font-size: 16px;
+      display: table-cell;
+      vertical-align: middle;
+      position: relative;
+      width: 1px;
+      white-space: nowrap;
+      border: @border-base;
+      color: @color-info;
+      background-color: @color-bg-input-append;
+    }
+  }
+
+  &--inputer {
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    border: @border-base;
+    .pre(box-sizing, border-box);
+
+    &:focus {
+      border: @border-base-hover;
+      outline: none;
+    }
+  }
+
+  &--textarea {
+    display: inline-block;
+    position: relative;
+    &-inner {
+      border: @border-base;
+      width: 100%;
+      height: 100%;
+      &:focus {
+        border: @border-base-hover;
+        outline: none;
+      }
+    }
+    .wq__input-count{
+      position: absolute;
+      right: 5px;
+      bottom:5px;
+    }
+  }
+}

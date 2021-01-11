@@ -2,9 +2,9 @@
  * @Description: 
  * @version: 1.1.0
  * @Author: wqq
- * @Date: 2021-01-08 09:51:33
+ * @Date: 2021-01-08 14:18:30
  * @LastEditors: wqq
- * @LastEditTime: 2021-01-08 09:51:50
+ * @LastEditTime: 2021-01-08 14:20:54
 -->
 <template>
   <div class="">
@@ -31,6 +31,6 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="less" scoped>
 </style>
 

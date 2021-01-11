@@ -33,3 +33,15 @@
 
 @border-base:1px solid @color-border;
 @border-base-hover:1px solid @color-border-hover;
+
+@color-bg-input-append:#f5f7fa;
+
+@bx:{
+  box-sizing: border-box;
+}
+.pre(@style,@value){
+  -webkit-@{style}: @value;
+  -moz-@{style}: @value;
+   -ms-@{style}: @value;
+       @{style}: @value;
+}
